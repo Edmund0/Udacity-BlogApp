@@ -1,0 +1,42 @@
+@import "stylesheets/nav.css";
+@import "stylesheets/header.css";
+@import "stylesheets/main.css";
+@import "stylesheets/footer.css";
+
+/*font importing*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap ');
+/*font importing*/
+
+
+* { /* Universal Selector with zero specificity */
+
+    /* reseting the box model */
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    /* reseting the box model */
+
+
+}
+
+
+:root { /* overriding specificity on html */
+
+    font-size: 16px; /* Good rule of thumb for font size */
+    font-weight: normal;
+    font-family: Cambria, Georgia, 'Montserrat', 'Times New Roman', 'Open Sans', sans-serif, serif;
+
+}
+
+
+#pageContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100vw;
+    min-width: 320px;
+
+}

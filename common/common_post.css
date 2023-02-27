@@ -1,0 +1,56 @@
+@import "../index.css";
+
+
+
+.body_article               {
+
+    display: inline-block;
+    height: auto;
+    border: 0px none red;
+    background-color: white;
+    padding: 20px;
+
+    }
+
+.body_article p              {
+
+    text-align: justify;
+}
+
+#radio_field {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+#radio_field div {
+
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+
+}
+
+#radio_field div * {
+
+    padding: 0em 0.1em;
+
+}
+
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.picture {
+
+    height: 10em;
+    width: 10em;
+}

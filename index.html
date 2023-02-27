@@ -1,0 +1,93 @@
+<!DOCTYPE html>         <!-- Declares that this document is HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Edmund Ofili">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Blog and Portfolio">
+
+    <title>Simple Blog App</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+<div id="page-container">
+
+        <!-- navigation section for other projects and personal contacts -->
+        <nav id= nav-bar>
+            <div id="nav-icon">BlogApp<button id="nav-button">&#9660;</button></div>  <!-- possible dropdown menu: https://www.fileformat.info/info/unicode/char/25b4/index.htm   -->
+            <div id= nav-container>
+                <div class="nav-card" id = home><div class="nav-item">
+                    <b><a href="index.html">Home</a></b>
+                </div></div>
+
+                <div class="nav-card" id = resume><div class="nav-item">
+                    <b><a href="https://en.wikipedia.org/wiki/Résumé">Resume</a></b>
+                </div></div>
+
+                <div class="nav-card" id = portfolio><div class="nav-item">
+                    <b><a href="https://en.wikipedia.org/wiki/Career_portfolio">Portfolio</a></b>
+                </div></div>
+
+                <div class="nav-card" id = about><div class="nav-item">
+                    <b><a href="common/about.html">About</a></b>
+                </div></div>
+
+                <div class="nav-card" id = contact><div class="nav-item">
+                    <b><a href="https://en.wikipedia.org/wiki/Contact">Contact</a></b>
+                </div></div>
+            </div>
+        </nav>
+    
+
+        <!-- header page for greatings and introductions and contacts? -->
+        <header id= home-header>  
+            <h1> My Personal Blog <span>and Online Portfolio<span> <br/> </h1>
+            <p> Welcome, this is my personal blog project <span>with links to my resume and other web projects<span>  </p> 
+        </header>
+
+
+        <!-- main page for blog posts -->
+        <main id="main-blog">
+            <heading id = post-heading><h1>Blog Posts</h1></heading>
+            <section id= post-grid>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="common/common_post.html">Mathematical Models</a></h3>   <summary>Mathematical Models are equations designed to approximate important real world phenomenons.</summary>   </div></article>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="">Dummy Blog Post</a></h3>   <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore culpa autem sequi hic quidem ea exercitationem sunt delectus iste.</summary>   </div></article>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="">Dummy Blog Post</a></h3>   <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore culpa autem sequi hic quidem ea exercitationem sunt delectus iste.</summary>   </div></article>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="">Dummy Blog Post</a></h3>   <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore culpa autem sequi hic quidem ea exercitationem sunt delectus iste.</summary>   </div></article>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="">Dummy Blog Post</a></h3>   <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore culpa autem sequi hic quidem ea exercitationem sunt delectus iste.</summary>   </div></article>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="">Dummy Blog Post</a></h3>   <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore culpa autem sequi hic quidem ea exercitationem sunt delectus iste.</summary>   </div></article>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="">Dummy Blog Post</a></h3>   <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore culpa autem sequi hic quidem ea exercitationem sunt delectus iste.</summary>   </div></article>
+                <article class="blog-article"><div class="blog-card">   <h3><a href ="">Dummy Blog Post</a></h3>   <summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore culpa autem sequi hic quidem ea exercitationem sunt delectus iste.</summary>   </div></article>
+            </section>
+        </main>
+
+
+        <!-- footer for contact information, links, and copyright page -->
+        <footer id= main-footer> 
+            <div class= footer-card>
+                <a href="https://www.facebook.com/chigoziem.ofili/" target="_blank">    
+                    <img src="img/facebook.png" width="50px" height="50px"> </a>
+
+                <a href="https://twitter.com" target="_blank">
+                    <img src="img/twitter_PNG19.png" width="44px" height="44px"> </a>
+
+                <a href="https://www.linkedin.com/in/chigoziem-edmund-ofili-689b14124/" target="_blank">
+                    <img src="img/linkedin.png" width="45px" height="45px" class ="linkedin"> </a>
+
+                <a href="https://github.com" target="_blank">
+                    <img src="img/GitHub.png" width="45px" height="45px" class = "github"> </a> 
+            </div>
+
+            <div class= footer-copyright>
+                <p> | Copyright © 2023 | </p>
+            </div>
+        </footer>
+
+</div>
+</body>
+
+</html>

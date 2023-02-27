@@ -1,0 +1,222 @@
+
+#nav-bar {
+
+    display: inline-block;
+    /* position: sticky; Due to the unresolved issue of clickable dropdown button, this will be removed*/
+    top: 0; 
+
+    width: 100%; 
+    height: 3em;
+
+    /*navigator background*/
+    background-color: whitesmoke;
+
+
+    z-index: 1; /*??? For some reason this is needed to display the menu */
+
+}
+
+    #nav-container {/* Organize the navBar into columns */
+
+        /* display: none;  
+        position: absolute; Only for dropdown box*/
+
+        min-width: 100%;
+
+    }
+
+
+/*
+    
+
+    #navBar:active #navContainer {/* TEST CODE - REPLACE WITH JS LATER */
+
+          /*  display: block;
+
+        }
+
+*/
+
+
+
+    #nav-icon {
+
+        position: sticky;
+        height: 100%;
+        top: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+        .nav-card {
+
+            display: inline-block;
+
+            /*Set Width*/
+            width: calc(100%); 
+
+        }
+        
+
+        .nav-item {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            /*Set Height and Background*/
+            height: 3em;
+            background-color: whitesmoke;
+
+        }
+
+        .nav-item a {
+            font-size: large;
+            font-weight: bold;
+            color: rgb(255, 0, 136);
+            text-decoration: none;
+
+        }
+
+
+
+
+@media (min-width: 600px) {
+
+    /* Under construction use  */
+
+    #nav-bar {
+
+        position: static; /*resets default*/
+
+        display: grid;
+        grid-template-columns: repeat (10, fr);
+        grid-template-areas: 
+         "BlogApp space1 space1 space1 space1 navContainer navContainer navContainer navContainer navContainer";
+
+        height: 3em;
+        width: calc(100% - 2em); 
+        padding: 1em;
+
+        /*navigator background*/
+        background-color: whitesmoke;
+
+    }
+
+        #nav-icon {
+
+            display: none;
+
+        }
+
+            #nav-button {/* Not Needed */
+
+                display: none;
+
+            }
+
+        #nav-container {/* Organize the navBar into columns */
+
+            position: static; /*resets default*/
+
+            grid-area: navContainer; 
+
+            display: grid;
+            grid-template-columns: repeat (8, fr);
+            grid-template-areas: 
+             "space2 space2 space2 home resume portfolio about contact";
+
+            height: 3em;
+            width: 100%;
+
+        }
+
+            .nav-card {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                /*Reset Width*/
+                width: none; 
+
+            }
+
+            .nav-item {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                /*Reset Height and Background*/
+                height: none;
+                background-color: none;
+
+                width: 5.5em;
+                border: 0.1em solid rgb(255, 0, 136);
+                border-radius: 25px 25px;
+
+            }
+
+            .nav-item:hover {
+
+
+                background-color: rgb(255, 0, 136);
+    
+            }
+
+            .nav-item a {
+                font-size: large;
+                font-weight: bold;
+                color: rgb(255, 0, 136);
+                text-decoration: none;
+            }
+
+            .nav-item a:hover {
+                text-decoration: underline;
+                text-underline-offset: 0.2em;
+                text-decoration-thickness: 0.05em;
+            }
+
+            .nav-item:hover a {
+
+
+                color: whitesmoke;
+    
+            }    
+
+
+            #home       { grid-area: home;      }
+            #portfolio  { grid-area: portfolio; }
+            #resume     { grid-area: resume;    }
+            #about      { grid-area: about;     }
+            #contact    { grid-area: contact;   }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 750px) {/* Makes the transition from 600px to 650px look smoother */
+
+    #nav-bar {
+        grid-template-columns: repeat (5, fr);
+        grid-template-areas: 
+         "navContainer navContainer navContainer navContainer navContainer";
+
+    }
+
+    #nav-container {/* Organize the navBar into columns */
+
+        grid-template-columns: repeat (5, fr);
+        grid-template-areas: 
+         "home resume portfolio about contact";
+
+    }
+
+}

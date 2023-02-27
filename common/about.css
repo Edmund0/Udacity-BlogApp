@@ -1,0 +1,71 @@
+@import "../index.css";
+
+
+
+.body_article               {
+
+    display: inline-block;
+    height: auto;
+    border: 0px none red;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.body_article p              {
+
+    text-align: justify;
+}
+
+
+
+
+
+.card-holder{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    border: 0px none red;
+    background-color: white;
+    
+
+}
+
+
+.oval-card{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 12em;
+
+    border: 1px solid red;
+
+    margin: 1.5em 0em;
+    padding: 30px;
+    border-radius: 50px 50px;
+    background-color: whitesmoke;
+
+}
+
+.picture {
+
+    height: 80%;
+    width: 10em;
+    border: 1px solid red;
+}
+
+.information {
+
+    padding: 1em;
+
+}
+
+.bio {
+
+    margin: 1.5em 0em;
+}
+
+

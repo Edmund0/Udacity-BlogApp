@@ -1,0 +1,45 @@
+#home-header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+
+    /*header background*/
+    background-image: url(../img/simple-blue-dark-sea-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+    #home-header h1 {
+
+        padding: 10px;
+
+    }
+
+    #home-header h1, #home-header p {
+
+        color: silver;
+
+    }
+
+    #home-header span {
+
+        display: none;
+
+    }
+
+
+@media (min-width: 650px) {
+
+    #home-header span {
+
+        display: inline;
+
+    }
+}
